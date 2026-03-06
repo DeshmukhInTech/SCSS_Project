@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #000;
+    gap: 10px;
+
+    section {
+        height: 90%;
+        flex-grow: 1;
+        background-position: center;
+        background-size: cover;
+        transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        cursor: pointer;
+        border: 1px solid rgb(9, 51, 9);
+        border-radius: 20px;
+    }
+
+    section:hover {
+        flex-grow: 3;
+        border: 2px solid #000;
+        box-shadow: 14px 10px 20px 10px rgba(3, 46, 3, 0.623);
+    }
+
+    section:nth-child(1) {
+        background-image: url(images/iron.jpg);
+    }
+
+    section:nth-child(2) {
+        background-image: url(images/loki.jpg);
+    }
+
+    section:nth-child(3) {
+        background-image: url(images/thor.jpg);
+    }
+
+    section:nth-child(4) {
+        background-image: url(images/doom.jpg);
+    }
+
+    section:nth-child(5) {
+        background-image: url(images/deadpool.jpg);
+    }
+}
